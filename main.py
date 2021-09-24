@@ -34,7 +34,7 @@ if __name__=='__main__':
             activeforeground='red',
             command=lambda idx=idx, f=f: btn_clicked(btns, idx, args.dir_path, f),
         )
-        button.grid(row=idx//grid_size, column=idx%grid_size)
+        button.grid(row=idx//grid_size, column=idx%grid_size, padx=5, pady=5)
         btns.append(button)
 
     window.mainloop()
